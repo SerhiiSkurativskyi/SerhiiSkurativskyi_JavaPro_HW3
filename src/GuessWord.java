@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 
 public class GuessWord {
-    static String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli",
+    static String[] sourceWords = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli",
             "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom",
             "nut", "olive", " pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
-    static int randomInt = new Random().nextInt(words.length);
-    static String randomWord = words[randomInt];
+    static int randomInt = new Random().nextInt(sourceWords.length);
+    static String randomWord = sourceWords[randomInt];
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
