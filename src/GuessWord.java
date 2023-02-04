@@ -11,7 +11,7 @@ public class GuessWord {
     static String randomWord = sourceWords[randomInt];
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner inputWord = new Scanner(System.in);
         int maskWordLength = 15;
         String maskWord = "#".repeat(maskWordLength);
         String random = randomWord;
@@ -21,7 +21,7 @@ public class GuessWord {
         System.out.println("Guess the word!");
         do {
             System.out.print("Enter a word: ");
-            StringBuilder attemptWord = new StringBuilder(input.nextLine());
+            StringBuilder attemptWord = new StringBuilder(inputWord.nextLine());
             for (int i = 0; i < (maskWordLength - attemptWord.length() + i); i++) {
                 attemptWord.append("#");
             }
