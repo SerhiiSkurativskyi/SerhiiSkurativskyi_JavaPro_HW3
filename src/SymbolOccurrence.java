@@ -1,13 +1,5 @@
 public class SymbolOccurrence {
-    private final String source;
-    private final char target;
-
-    public SymbolOccurrence(String source, char target) {
-        this.source = source;
-        this.target = target;
-    }
-
-    public int findSymbolOccurrence() {
+        public static int findSymbolOccurrence(String source, char target) {
         char[] test1 = source.toCharArray();
         int findSymbolOccurrence = 0;
         for (char c : test1) {
