@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        SymbolOccurrence testSymbol = new SymbolOccurrence("This is test string", 't');
-        System.out.println(testSymbol.findSymbolOccurrence());
+        System.out.println(SymbolOccurrence.findSymbolOccurrence("This is test string", 't'));
 
         WordPosition testWord = new WordPosition("This is test string", "str");
         System.out.println(testWord.findWordPosition());
